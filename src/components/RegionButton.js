@@ -1,8 +1,8 @@
 import React from 'react'
 
-const RegionButton = () => (
+const RegionButton = ({ title }) => (
   <div>
-    <button>REGION</button>
+    <button>{title}</button>
   </div>
 )
 

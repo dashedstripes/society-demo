@@ -20,6 +20,20 @@ const store = createStore(store => store, {
           docs: '#'
         }
       ]
+    },
+    {
+      region: 'AMER',
+      cards: [
+        {
+          id: 1,
+          name: 'Skycab US',
+          url: 'skycab-us.zendesk.com',
+          description: 'A technology instance, based on a ride sharing company.',
+          type: 'technology',
+          login: '#',
+          docs: '#'
+        }
+      ]
     }
   ]
 })
