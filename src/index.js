@@ -8,6 +8,7 @@ const store = createStore(store => store, {
   currentRegion: 'EMEA',
   demos: [
     {
+      id: 1,
       region: 'EMEA',
       cards: [
         {
@@ -22,6 +23,7 @@ const store = createStore(store => store, {
       ]
     },
     {
+      id: 2,
       region: 'AMER',
       cards: [
         {
