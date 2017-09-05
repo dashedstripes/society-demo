@@ -1,13 +1,13 @@
 import React from 'react'
 
-const DemoCard = () => (
+const DemoCard = ({ name, url, description, type, login, docs }) => (
   <div>
-    <h4>Demo Name</h4>
-    <a href="#">demo.zendesk.com</a>
-    <p>A brief description</p>
-    <p>technology</p>
-    <a href="#">login</a>
-    <a href="#">docs</a>
+    <h4>{name}</h4>
+    <a href="{url}">{url}</a>
+    <p>{description}</p>
+    <p>{type}</p>
+    <a href={login}>login</a>
+    <a href={docs}> docs</a>
   </div>
 )
 

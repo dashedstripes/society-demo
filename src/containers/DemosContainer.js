@@ -1,11 +1,17 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import DemosList from '../components/DemosList'
 
-const DemosContainer = () => (
+const DemosContainer = ({ region, demos }) => (
   <div>
-    <h2>Region Name</h2>
-    <DemosList />
+    <h2>{region}</h2>
+    <DemosList demos={demos} />
   </div>
 )
 
-export default DemosContainer
+const mapStateToProps = (state) => ({
+  region: state.currentRegion,
+  demos: state.demos.filter(demo => demo.region === state.currentRegion)[0].cards
+})
+
+export default connect(mapStateToProps)(DemosContainer)

@@ -1,9 +1,11 @@
 import React from 'react'
 import DemoCard from './DemoCard'
 
-const DemosList = () => (
+const DemosList = ({ demos }) => (
   <div>
-    <DemoCard />
+    {demos.map(demo => (
+      <DemoCard key={demo.id} {...demo} />
+    ))}
   </div>
 )
 
