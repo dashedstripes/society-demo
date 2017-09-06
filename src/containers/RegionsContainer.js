@@ -7,9 +7,11 @@ class RegionsContainer extends Component {
     return (
       <div>
         <h2>Regions</h2>
-        {this.props.regions.map((region, index) => (
-          <RegionList key={index} title={region.region} demos={this.props.demos} isOpen={region.isOpen} />
-        ))}
+        {this.props.demos.map((demo, index) => {
+          return (
+            <RegionList key={index} title={demo.region} demos={demo.cards} isOpen={demo.isOpen} />
+          )
+        })}
       </div>
     )
   }
@@ -17,10 +19,7 @@ class RegionsContainer extends Component {
 
 const mapStateToProps = (state) => {
   return ({
-    regions: state.demos.filter(demo => demo.region !== state.currentRegion).map((demo) => {
-      return { region: demo.region, isOpen: demo.isOpen }
-    }),
-    demos: state.demos
+    demos: state.demos.filter((demo) => demo.region !== state.currentRegion)
   })
 }
 

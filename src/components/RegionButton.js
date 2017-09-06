@@ -4,7 +4,7 @@ class RegionButton extends Component {
   render() {
     return (
       <div>
-        <button>{this.props.title}</button>
+        <button onClick={this.props.onClick}>{this.props.title}</button>
       </div>
     )
   }

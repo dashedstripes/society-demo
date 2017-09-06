@@ -13,10 +13,12 @@ class DemosContainer extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  region: state.currentRegion,
-  demos: state.demos.filter(demo => demo.region === state.currentRegion)[0].cards
-})
+const mapStateToProps = (state) => {
+  return ({
+    region: state.currentRegion,
+    demos: state.demos.filter((demo) => demo.region === state.currentRegion)[0].cards
+  })
+}
 
 export default connect(mapStateToProps)(DemosContainer)
 
