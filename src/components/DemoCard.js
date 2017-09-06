@@ -12,15 +12,11 @@ class DemoCard extends Component {
         <div className="DemoCardBottom">
           <div className="DemoCardBottomLeft">
             <p>{this.props.description}</p>
-            <p>{this.props.type}</p>
+            <p className="DemoCardType">{this.props.type}</p>
           </div>
           <div className="DemoCardBottomRight">
-            <div>
-              <a href={this.props.login}>login</a>
-            </div>
-            <div>
-              <a href={this.props.docs}> docs</a>
-            </div>
+            <a className="DemoCardLink" href={this.props.login}>login</a>
+            <a className="DemoCardLink" href={this.props.docs}>docs</a>
           </div>
         </div>
       </div >
