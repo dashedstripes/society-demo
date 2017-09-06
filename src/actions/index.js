@@ -11,3 +11,9 @@ export const setSearchInput = (input) => {
     input
   }
 }
+
+export const clearSearch = () => {
+  return {
+    type: 'CLEAR_SEARCH'
+  }
+}

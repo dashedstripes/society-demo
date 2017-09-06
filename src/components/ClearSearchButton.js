@@ -4,7 +4,7 @@ import '../styles/ClearSearchButton.css'
 class ClearSearchButton extends Component {
   render() {
     return (
-      <button className="ClearSearchButton">Clear Search</button>
+      <button className="ClearSearchButton" onClick={this.props.handleClick}>Clear Search</button>
     )
   }
 }
