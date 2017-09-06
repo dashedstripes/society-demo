@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const RegionButton = ({ title }) => (
-  <div>
-    <button>{title}</button>
-  </div>
-)
+class RegionButton extends Component {
+  render() {
+    return (
+      <div>
+        <button>{this.props.title}</button>
+      </div>
+    )
+  }
+}
 
 export default RegionButton

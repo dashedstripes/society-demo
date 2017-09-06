@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 import FilterCheckbox from './FilterCheckbox'
 
-const FiltersList = () => (
-  <div>
-    <FilterCheckbox />
-  </div>
-)
+class FiltersList extends Component {
+  render() {
+    return (
+      <div>
+        <FilterCheckbox />
+      </div>
+    )
+  }
+}
 
 export default FiltersList

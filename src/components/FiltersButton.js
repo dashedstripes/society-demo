@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const FiltersButton = () => (
-  <button>Filters</button>
-)
+class FiltersButton extends Component {
+  render() {
+    return (
+      <button>Filters</button>
+    )
+  }
+}
 
 export default FiltersButton

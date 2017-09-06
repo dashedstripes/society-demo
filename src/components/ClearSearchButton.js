@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const ClearSearchButton = () => (
-  <button>Clear Search</button>
-)
+class ClearSearchButton extends Component {
+  render() {
+    return (
+      <button>Clear Search</button>
+    );
+  }
+}
 
 export default ClearSearchButton

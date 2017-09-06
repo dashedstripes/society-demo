@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import DemoCard from './DemoCard'
 
-const DemosList = ({ demos }) => (
-  <div>
-    {demos.map(demo => (
-      <DemoCard key={demo.id} {...demo} />
-    ))}
-  </div>
-)
+class DemoList extends Component {
+  render() {
+    return (
+      <div>
+        {this.props.demos.map(demo => (
+          <DemoCard key={demo.id} {...demo} />
+        ))}
+      </div>
+    )
+  }
+}
 
-export default DemosList
+export default DemoList

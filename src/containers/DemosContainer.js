@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import DemosList from '../components/DemosList'
 
-const DemosContainer = ({ region, demos }) => {
-  return (
-    <div>
-      <h2>{region}</h2>
-      <DemosList demos={demos} />
-    </div>
-  )
+class DemosContainer extends Component {
+  render() {
+    return (
+      <div>
+        <h2>{this.props.region}</h2>
+        <DemosList demos={this.props.demos} />
+      </div>
+    )
+  }
 }
 
 const mapStateToProps = (state) => ({
@@ -17,3 +19,4 @@ const mapStateToProps = (state) => ({
 })
 
 export default connect(mapStateToProps)(DemosContainer)
+

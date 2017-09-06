@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import SearchInput from '../components/SearchInput'
 import FiltersContainer from './FiltersContainer'
 
-const FormContainer = () => (
-  <div>
-    <SearchInput />
-    <FiltersContainer />
-  </div>
-)
+class FormContainer extends Component {
+  render() {
+    return (
+      <div>
+        <SearchInput />
+        <FiltersContainer />
+      </div>
+    )
+  }
+}
 
 export default FormContainer

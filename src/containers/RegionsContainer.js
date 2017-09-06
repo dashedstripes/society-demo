@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import RegionList from '../components/RegionList'
 
-const RegionsContainer = ({ regions, demos }) => {
-  return (
-    <div>
-      <h2>Regions</h2>
-      {regions.map((region, index) => (
-        <RegionList key={index} title={region.region} demos={demos} isOpen={region.isOpen} />
-      ))}
-    </div>
-  )
+class RegionsContainer extends Component {
+  render() {
+    return (
+      <div>
+        <h2>Regions</h2>
+        {this.props.regions.map((region, index) => (
+          <RegionList key={index} title={region.region} demos={this.props.demos} isOpen={region.isOpen} />
+        ))}
+      </div>
+    )
+  }
 }
 
 const mapStateToProps = (state) => {

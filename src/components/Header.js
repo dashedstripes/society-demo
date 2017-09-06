@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const Header = () => (
-  <div className="header">
-    zendesksociety
-  </div>
-)
+class Header extends Component {
+  render() {
+    return (
+      <div className="header">
+        zendesksociety
+      </div>
+    )
+  }
+}
 
 export default Header
