@@ -7,11 +7,13 @@ import RegionsContainer from '../containers/RegionsContainer'
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="app">
         <Header />
-        <FormContainer />
-        <DemosContainer />
-        <RegionsContainer />
+        <div className="container">
+          <FormContainer />
+          <DemosContainer />
+          <RegionsContainer />
+        </div>
       </div>
     );
   }

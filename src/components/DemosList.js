@@ -4,9 +4,11 @@ import DemoCard from './DemoCard'
 class DemoList extends Component {
   render() {
     return (
-      <div>
+      <div className="row">
         {this.props.demos.map(demo => (
-          <DemoCard key={demo.id} {...demo} />
+          <div className="col-md-4">
+            <DemoCard key={demo.id} {...demo} />
+          </div>
         ))}
       </div>
     )
