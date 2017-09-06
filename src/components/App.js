@@ -1,23 +1,40 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import Header from './Header'
 import FormContainer from '../containers/FormContainer'
 import DemosContainer from '../containers/DemosContainer'
 import RegionsContainer from '../containers/RegionsContainer'
+import ResultsContainer from '../containers/ResultsContainer'
 import '../styles/App.css'
 
 class App extends Component {
   render() {
-    return (
-      <div className="app">
-        <Header />
-        <div className="container">
-          <FormContainer />
-          <DemosContainer />
-          <RegionsContainer />
+    if (this.props.searchInput === '') {
+      return (
+        <div className="app">
+          <Header />
+          <div className="container">
+            <FormContainer />
+            <DemosContainer />
+            <RegionsContainer />
+          </div>
         </div>
-      </div>
-    );
+      )
+    } else {
+      return (
+        <div className="app">
+          <Header />
+          <div className="container">
+            <FormContainer />
+            <ResultsContainer />
+          </div>
+        </div>
+      )
+    }
+
   }
 }
 
-export default App
+const mapStateToProps = (state) => state
+
+export default connect(mapStateToProps)(App)
