@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import DemosList from '../components/DemosList'
+import '../styles/DemosContainer.css'
 
 class DemosContainer extends Component {
   render() {
     return (
-      <div>
-        <h2>{this.props.region}</h2>
+      <div className="DemosContainer">
+        <h2 className="DemosContainerTitle">{this.props.region}</h2>
         <DemosList demos={this.props.demos} />
       </div>
     )
