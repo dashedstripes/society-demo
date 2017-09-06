@@ -39,22 +39,6 @@ const store = createStore(reducer, {
           docs: '#'
         }
       ]
-    },
-    {
-      id: 3,
-      region: 'APAC',
-      isOpen: false,
-      cards: [
-        {
-          id: 1,
-          name: 'Skycab APAC',
-          url: 'skycab-apac.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
-          login: '#',
-          docs: '#'
-        }
-      ]
     }
   ]
 })
