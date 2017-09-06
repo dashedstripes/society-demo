@@ -1,6 +1,7 @@
 .DemoCard {
   height: 250px;
   overflow: auto;
+  margin-bottom: 20px;
   background-color: #eaeaea;
 }
 
