@@ -42,7 +42,7 @@ const store = createStore(reducer, {
           docs: '#'
         },
         {
-          id: 1,
+          id: 2,
           name: 'Skycab US',
           color: '#FF6D5A',
           url: 'skycab-us.zendesk.com',
@@ -52,7 +52,7 @@ const store = createStore(reducer, {
           docs: '#'
         },
         {
-          id: 1,
+          id: 3,
           name: 'Skycab US',
           color: '#FF6D5A',
           url: 'skycab-us.zendesk.com',
@@ -62,7 +62,7 @@ const store = createStore(reducer, {
           docs: '#'
         },
         {
-          id: 1,
+          id: 4,
           name: 'Skycab US',
           color: '#FF6D5A',
           url: 'skycab-us.zendesk.com',
@@ -72,7 +72,7 @@ const store = createStore(reducer, {
           docs: '#'
         },
         {
-          id: 1,
+          id: 5,
           name: 'Skycab US',
           color: '#FF6D5A',
           url: 'skycab-us.zendesk.com',

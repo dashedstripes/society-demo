@@ -17,8 +17,8 @@ class RegionList extends Component {
           <RegionButton title={this.props.title} onClick={this.handleClick.bind(this, false)} />
           <div className="row">
             {this.props.demos.filter(demo => demo.region === this.props.title)[0].cards.map((demo) => (
-              <div className="col-md-4">
-                <DemoCard key={demo.id}{...demo} />
+              <div key={demo.id} className="col-md-4">
+                <DemoCard {...demo} />
               </div>
             ))}
           </div>
