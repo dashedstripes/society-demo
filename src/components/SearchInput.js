@@ -13,7 +13,7 @@ class SearchInput extends Component {
     this.setState({
       value: e.target.value
     })
-    this.props.handleChange(this.state.value)
+    this.props.handleChange(e.target.value)
   }
 
   render() {

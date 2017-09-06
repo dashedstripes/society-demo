@@ -8,7 +8,6 @@ import '../styles/FormContainer.css'
 class FormContainer extends Component {
 
   handleChange(value) {
-    console.log(value)
     this.props.dispatch(setSearchInput(value))
   }
 
