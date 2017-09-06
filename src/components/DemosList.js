@@ -5,11 +5,13 @@ class DemoList extends Component {
   render() {
     return (
       <div className="row">
-        {this.props.demos.map(demo => (
-          <div className="col-md-4">
-            <DemoCard key={demo.id} {...demo} />
-          </div>
-        ))}
+        {this.props.demos.map(demo => {
+          return (
+            <div key={demo.id} className="col-md-4">
+              <DemoCard {...demo} />
+            </div>
+          )
+        })}
       </div>
     )
   }
