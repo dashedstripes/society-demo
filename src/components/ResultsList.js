@@ -6,9 +6,9 @@ class ResultsList extends Component {
     if (this.props.results.length > 0) {
       return (
         <div className="row">
-          {this.props.results.map((result) => {
+          {this.props.results.map((result, index) => {
             return (
-              <div key={result.id} className="col-md-4">
+              <div key={index} className="col-md-4">
                 <DemoCard {...result} />
               </div>
             )
