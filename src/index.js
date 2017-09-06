@@ -10,6 +10,7 @@ const store = createStore(store => store, {
     {
       id: 1,
       region: 'EMEA',
+      isOpen: false,
       cards: [
         {
           id: 1,
@@ -25,6 +26,7 @@ const store = createStore(store => store, {
     {
       id: 2,
       region: 'AMER',
+      isOpen: false,
       cards: [
         {
           id: 1,

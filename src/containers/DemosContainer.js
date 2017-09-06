@@ -2,12 +2,14 @@ import React from 'react'
 import { connect } from 'react-redux'
 import DemosList from '../components/DemosList'
 
-const DemosContainer = ({ region, demos }) => (
-  <div>
-    <h2>{region}</h2>
-    <DemosList demos={demos} />
-  </div>
-)
+const DemosContainer = ({ region, demos }) => {
+  return (
+    <div>
+      <h2>{region}</h2>
+      <DemosList demos={demos} />
+    </div>
+  )
+}
 
 const mapStateToProps = (state) => ({
   region: state.currentRegion,
