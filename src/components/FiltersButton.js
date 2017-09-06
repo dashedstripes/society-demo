@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import '../styles/FiltersButton.css'
 
 class FiltersButton extends Component {
   render() {
     return (
-      <button>Filters</button>
+      <button className="FiltersButton">Filters</button>
     )
   }
 }
