@@ -39,7 +39,48 @@ const store = createStore(reducer, {
           type: 'technology',
           login: '#',
           docs: '#'
+        },
+        {
+          id: 1,
+          name: 'Skycab US',
+          color: '#FF6D5A',
+          url: 'skycab-us.zendesk.com',
+          description: 'A technology instance, based on a ride sharing company.',
+          type: 'technology',
+          login: '#',
+          docs: '#'
+        },
+        {
+          id: 1,
+          name: 'Skycab US',
+          color: '#FF6D5A',
+          url: 'skycab-us.zendesk.com',
+          description: 'A technology instance, based on a ride sharing company.',
+          type: 'technology',
+          login: '#',
+          docs: '#'
+        },
+        {
+          id: 1,
+          name: 'Skycab US',
+          color: '#FF6D5A',
+          url: 'skycab-us.zendesk.com',
+          description: 'A technology instance, based on a ride sharing company.',
+          type: 'technology',
+          login: '#',
+          docs: '#'
+        },
+        {
+          id: 1,
+          name: 'Skycab US',
+          color: '#FF6D5A',
+          url: 'skycab-us.zendesk.com',
+          description: 'A technology instance, based on a ride sharing company.',
+          type: 'technology',
+          login: '#',
+          docs: '#'
         }
+
       ]
     },
     {

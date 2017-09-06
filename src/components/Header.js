@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="container">
-          <h4>zendesksociety</h4>
+          <h4 className="HeaderTitle">zendesk<span className="HeaderSocietyTitle">society</span></h4>
         </div>
       </div>
     )

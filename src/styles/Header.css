@@ -1,5 +1,14 @@
 .Header {
-  background-color: #eaeaea;
+  color: #ffffff;
+  background-color: #03363D;
   margin-bottom: 20px;
   padding: 10px 0px;
+}
+
+.HeaderTitle {
+  font-weight: bold;
+}
+
+.HeaderSocietyTitle {
+  color: #78A300;
 }
