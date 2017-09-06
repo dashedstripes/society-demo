@@ -4,3 +4,10 @@ export const toggleRegion = (payload) => {
     payload: payload // { region: string, isOpen: boolean }
   }
 }
+
+export const setSearchInput = (input) => {
+  return {
+    type: 'SET_SEARCH_INPUT',
+    input
+  }
+}
