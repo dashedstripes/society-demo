@@ -9,7 +9,7 @@ const store = createStore(reducer, {
   currentRegion: 'EMEA',
   searchInput: '',
   filters: {
-    isOpen: false
+    isOpen: true
   },
   demos: [
     {
