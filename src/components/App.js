@@ -9,7 +9,7 @@ import '../styles/App.css'
 
 class App extends Component {
   render() {
-    if (this.props.searchInput === '') {
+    if (this.props.filters.searchInput === '') {
       return (
         <div className="app">
           <Header />

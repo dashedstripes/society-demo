@@ -27,7 +27,7 @@ const mapStateToProps = (state) => {
 
   state.demos.forEach((demo) => {
     demo.cards.forEach((card) => {
-      if (card.name.toLowerCase().indexOf(state.searchInput.toLowerCase()) !== -1) {
+      if (card.name.toLowerCase().indexOf(state.filters.searchInput.toLowerCase()) !== -1) {
         results.push(card)
       }
     })

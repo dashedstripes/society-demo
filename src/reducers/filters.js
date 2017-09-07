@@ -11,6 +11,10 @@ const filters = (state = {}, action) => {
           return option
         })
       }
+    case 'SET_SEARCH_INPUT':
+      return { ...state, searchInput: action.input }
+    case 'CLEAR_SEARCH':
+      return { ...state, searchInput: '' }
     default:
       return state
   }
