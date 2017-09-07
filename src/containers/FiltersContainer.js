@@ -18,7 +18,9 @@ class FiltersContainer extends Component {
       )
     } else {
       return (
-        <FiltersButton handleChange={this.handleChange.bind(this, true)} />
+        <div className="row">
+          <FiltersButton handleChange={this.handleChange.bind(this, true)} />
+        </div>
       )
     }
   }
