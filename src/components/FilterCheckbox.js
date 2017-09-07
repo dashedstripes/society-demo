@@ -5,7 +5,7 @@ class FilterCheckbox extends Component {
   render() {
     return (
       <li className="FilterCheckbox">
-        <label>{this.props.label}</label>
+        <label className="FilterCheckboxLabel">{this.props.label}</label>
         <input type="checkbox" checked={this.props.isChecked} />
       </li>
     );
