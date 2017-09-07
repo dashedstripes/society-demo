@@ -11,7 +11,7 @@ class FiltersContainer extends Component {
   render() {
     if (this.props.filters.isOpen) {
       return (
-        <div>
+        <div className="row">
           <FiltersButton handleChange={this.handleChange.bind(this, false)} />
           <FiltersList />
         </div>
