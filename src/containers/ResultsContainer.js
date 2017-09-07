@@ -25,19 +25,13 @@ class ResultsContainer extends Component {
 const mapStateToProps = (state) => {
   let results = []
 
-  if (state.searchInput === '') {
-    state.filters.options.forEach((filter) => {
-      if (filter.isChecked) {
-        state.demos.forEach((demo) => {
-          demo.cards.forEach((card) => {
-            if (card.type.toLowerCase() === filter.label.toLowerCase()) {
-              results.push(card)
-            }
-          })
-        })
+  state.demos.forEach((demo) => {
+    demo.cards.forEach((card) => {
+      if (card.name.toLowerCase().indexOf(state.searchInput.toLowerCase()) !== -1) {
+        results.push(card)
       }
     })
-  }
+  })
 
   return ({
     results: results
