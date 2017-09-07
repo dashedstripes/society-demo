@@ -8,7 +8,7 @@ import App from './components/App'
 const store = createStore(reducer, {
   currentRegion: 'EMEA',
   filters: {
-    isOpen: true,
+    isOpen: false,
     searchInput: '',
     options: [
       {
