@@ -8,6 +8,9 @@ import App from './components/App'
 const store = createStore(reducer, {
   currentRegion: 'EMEA',
   searchInput: '',
+  filters: {
+    isOpen: false
+  },
   demos: [
     {
       id: 1,
