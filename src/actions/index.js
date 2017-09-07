@@ -17,3 +17,10 @@ export const clearSearch = () => {
     type: 'CLEAR_SEARCH'
   }
 }
+
+export const toggleFilters = (isOpen) => {
+  return {
+    type: 'TOGGLE_FILTERS',
+    isOpen
+  }
+}
