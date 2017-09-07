@@ -6,9 +6,9 @@ class FiltersList extends Component {
   render() {
     return (
       <ul className="FiltersList">
-        {this.props.options.map((option) => {
+        {this.props.options.map((option, index) => {
           return (
-            <FilterCheckbox {...option} />
+            <FilterCheckbox key={index} {...option} />
           )
         })}
       </ul>
