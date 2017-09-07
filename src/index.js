@@ -12,10 +12,12 @@ const store = createStore(reducer, {
     isOpen: true,
     options: [
       {
+        id: 1,
         label: 'technology',
         isChecked: false
       },
       {
+        id: 2,
         label: 'retail',
         isChecked: false
       }

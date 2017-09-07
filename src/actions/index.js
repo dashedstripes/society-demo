@@ -24,3 +24,10 @@ export const toggleFilters = (isOpen) => {
     isOpen
   }
 }
+
+export const toggleFilterOption = (payload) => {
+  return {
+    type: 'TOGGLE_FILTER_OPTION',
+    payload: payload // { id: number, isChecked: boolean }
+  }
+}
