@@ -14,7 +14,7 @@ class FiltersContainer extends Component {
         <div className="row">
           <div className="col-md-12">
             <FiltersButton handleChange={this.handleChange.bind(this, false)} />
-            <FiltersList />
+            <FiltersList options={this.props.filters.options} />
           </div>
         </div>
       )

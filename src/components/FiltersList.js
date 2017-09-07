@@ -6,7 +6,11 @@ class FiltersList extends Component {
   render() {
     return (
       <div className="FiltersList">
-        <FilterCheckbox />
+        {this.props.options.map((option) => {
+          return (
+            <FilterCheckbox {...option} />
+          )
+        })}
       </div>
     )
   }
