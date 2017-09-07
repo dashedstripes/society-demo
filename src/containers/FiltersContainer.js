@@ -12,14 +12,18 @@ class FiltersContainer extends Component {
     if (this.props.filters.isOpen) {
       return (
         <div className="row">
-          <FiltersButton handleChange={this.handleChange.bind(this, false)} />
-          <FiltersList />
+          <div className="col-md-12">
+            <FiltersButton handleChange={this.handleChange.bind(this, false)} />
+            <FiltersList />
+          </div>
         </div>
       )
     } else {
       return (
         <div className="row">
-          <FiltersButton handleChange={this.handleChange.bind(this, true)} />
+          <div className="col-md-12">
+            <FiltersButton handleChange={this.handleChange.bind(this, true)} />
+          </div>
         </div>
       )
     }
