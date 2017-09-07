@@ -5,13 +5,13 @@ import '../styles/FiltersList.css'
 class FiltersList extends Component {
   render() {
     return (
-      <div className="FiltersList">
+      <ul className="FiltersList">
         {this.props.options.map((option) => {
           return (
             <FilterCheckbox {...option} />
           )
         })}
-      </div>
+      </ul>
     )
   }
 }
