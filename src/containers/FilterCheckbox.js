@@ -7,7 +7,6 @@ class FilterCheckbox extends Component {
 
   handleChange(e) {
     this.props.dispatch(toggleFilterOption({ id: this.props.id, isChecked: !this.props.isChecked }))
-    this.props.dispatch(setIsActive(!this.props.isChecked))
   }
 
   render() {

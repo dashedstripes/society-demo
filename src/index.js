@@ -63,7 +63,7 @@ const store = createStore(reducer, {
           color: '#FF6D5A',
           url: 'skycab-us.zendesk.com',
           description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
+          type: 'retail',
           login: '#',
           docs: '#'
         },
@@ -83,7 +83,7 @@ const store = createStore(reducer, {
           color: '#FF6D5A',
           url: 'skycab-us.zendesk.com',
           description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
+          type: 'retail',
           login: '#',
           docs: '#'
         },
