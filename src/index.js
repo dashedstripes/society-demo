@@ -28,7 +28,7 @@ const store = createStore(reducer, {
     {
       id: 1,
       region: 'EMEA',
-      isOpen: true,
+      isOpen: false,
       cards: [
         {
           id: 1,
@@ -97,7 +97,6 @@ const store = createStore(reducer, {
           login: '#',
           docs: '#'
         }
-
       ]
     },
     {
