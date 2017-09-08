@@ -25,9 +25,22 @@ export const toggleFilters = (isOpen) => {
   }
 }
 
+export const setIsActive = (isActive) => {
+  return {
+    type: 'SET_IS_ACTIVE',
+    isActive
+  }
+}
+
 export const toggleFilterOption = (payload) => {
   return {
     type: 'TOGGLE_FILTER_OPTION',
     payload: payload // { id: number, isChecked: boolean }
+  }
+}
+
+export const resetFilters = () => {
+  return {
+    type: 'RESET_FILTERS'
   }
 }

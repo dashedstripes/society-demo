@@ -13,8 +13,17 @@ const filters = (state = {}, action) => {
       }
     case 'SET_SEARCH_INPUT':
       return { ...state, searchInput: action.input }
+    case 'SET_IS_ACTIVE':
+      return { ...state, isActive: action.isActive }
     case 'CLEAR_SEARCH':
       return { ...state, searchInput: '' }
+    case 'RESET_FILTERS':
+      return {
+        ...state, options: state.options.map((option) => {
+          option.isChecked = false
+          return option
+        })
+      }
     default:
       return state
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { clearSearch } from '../actions'
+import { clearSearch, setIsActive, resetFilters, toggleFilters } from '../actions'
 import ClearSearchButton from '../components/ClearSearchButton'
 import ResultsList from '../components/ResultsList'
 import '../styles/ResultsContainer.css'
@@ -9,6 +9,9 @@ class ResultsContainer extends Component {
 
   handleClick() {
     this.props.dispatch(clearSearch())
+    this.props.dispatch(resetFilters())
+    this.props.dispatch(toggleFilters(false))
+    this.props.dispatch(setIsActive(false))
   }
 
   render() {

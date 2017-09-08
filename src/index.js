@@ -9,6 +9,7 @@ const store = createStore(reducer, {
   currentRegion: 'EMEA',
   filters: {
     isOpen: false,
+    isActive: false,
     searchInput: '',
     options: [
       {
@@ -123,3 +124,4 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>, document.getElementById('root'))
+

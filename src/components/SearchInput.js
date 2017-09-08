@@ -14,6 +14,12 @@ class SearchInput extends Component {
       value: e.target.value
     })
     this.props.handleChange(e.target.value)
+
+    if (e.target.value !== '') {
+      this.props.setIsActive(true)
+    } else {
+      this.props.setIsActive(false)
+    }
   }
 
   render() {
