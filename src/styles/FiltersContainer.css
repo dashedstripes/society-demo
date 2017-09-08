@@ -1,3 +1,9 @@
 .FiltersContainerColumn {
   padding: 0px;
 }
+
+@media screen and (max-width: 990px) {
+  .FiltersContainerColumn {
+    padding: 15px;
+  }
+}
