@@ -13,7 +13,7 @@ class FilterCheckbox extends Component {
   render() {
     return (
       <li className="FilterCheckbox">
-        <label className="FilterCheckboxLabel">{this.props.label}</label>
+        <label className="FilterCheckboxLabel">{this.props.label.charAt(0).toUpperCase() + this.props.label.slice(1)}</label>
         <input type="checkbox" className="FilterCheckboxInput" checked={this.props.isChecked} onChange={this.handleChange.bind(this)} />
       </li>
     );

@@ -12,7 +12,7 @@ class DemoCard extends Component {
         <div className="DemoCardBottom">
           <div className="DemoCardBottomLeft">
             <p>{this.props.description}</p>
-            <p className="DemoCardType">{this.props.type}</p>
+            <p className="DemoCardType">{this.props.type.charAt(0).toUpperCase() + this.props.type.slice(1)}</p>
           </div>
           <div className="DemoCardBottomRight">
             <a className="DemoCardLink" href={this.props.login}>login</a>
