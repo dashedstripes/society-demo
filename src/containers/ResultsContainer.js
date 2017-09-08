@@ -28,11 +28,55 @@ class ResultsContainer extends Component {
 const mapStateToProps = (state) => {
   let results = []
 
+  if (state.filters.searchInput !== '') {
+    let numOfActiveFilters = 0
+    state.filters.options.forEach((option) => {
+      if (option.isChecked) {
+        numOfActiveFilters += 1
+        state.demos.forEach((demo) => {
+          demo.cards.forEach((card) => {
+            if (card.name.toLowerCase().indexOf(state.filters.searchInput.toLowerCase()) !== -1 && card.type === option.label) {
+              results.push(card)
+            }
+          })
+        })
+      }
+    })
 
+    if (numOfActiveFilters > 0) {
+      return ({
+        results: results
+      })
+    } else {
+      state.demos.forEach((demo) => {
+        demo.cards.forEach((card) => {
+          if (card.name.toLowerCase().indexOf(state.filters.searchInput.toLowerCase()) !== -1) {
+            results.push(card)
+          }
+        })
+      })
+      return ({
+        results: results
+      })
+    }
+  } else {
+    state.filters.options.forEach((option) => {
+      if (option.isChecked) {
+        state.demos.forEach((demo) => {
+          demo.cards.forEach((card) => {
+            if (card.type === option.label) {
+              results.push(card)
+            }
+          })
+        })
+      }
+    })
 
-  return ({
-    results: results
-  })
+    return ({
+      results: results
+    })
+
+  }
 }
 
 export default connect(mapStateToProps)(ResultsContainer)
