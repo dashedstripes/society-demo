@@ -6,9 +6,11 @@
 }
 
 .HeaderTitle {
+  font-family: 'Muli', sans-serif;
   font-weight: bold;
 }
 
 .HeaderSocietyTitle {
   color: #78A300;
+  
 }
