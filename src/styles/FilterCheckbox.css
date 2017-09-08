@@ -1,6 +1,7 @@
 .FilterCheckbox {
   list-style-type: none;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 .FilterCheckbox:last-of-type {
@@ -9,4 +10,8 @@
 
 .FilterCheckboxLabel {
   margin-right: 10px;
+}
+
+.FilterCheckboxInput {
+  float: right;
 }

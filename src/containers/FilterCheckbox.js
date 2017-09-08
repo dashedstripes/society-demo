@@ -14,7 +14,7 @@ class FilterCheckbox extends Component {
     return (
       <li className="FilterCheckbox">
         <label className="FilterCheckboxLabel">{this.props.label}</label>
-        <input type="checkbox" checked={this.props.isChecked} onChange={this.handleChange.bind(this)} />
+        <input type="checkbox" className="FilterCheckboxInput" checked={this.props.isChecked} onChange={this.handleChange.bind(this)} />
       </li>
     );
   }
