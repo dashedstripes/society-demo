@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { toggleFilterOption, setIsActive } from '../actions'
+import { toggleFilterOption } from '../actions'
 import '../styles/FilterCheckbox.css'
 
 class FilterCheckbox extends Component {

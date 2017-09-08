@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import _ from 'lodash'
 import { clearSearch, setIsActive, resetFilters, toggleFilters } from '../actions'
 import ClearSearchButton from '../components/ClearSearchButton'
 import ResultsList from '../components/ResultsList'
@@ -28,6 +27,8 @@ class ResultsContainer extends Component {
 
 const mapStateToProps = (state) => {
   let results = []
+
+
 
   return ({
     results: results
