@@ -42,35 +42,32 @@ const mapStateToProps = (state) => {
     })
   }
 
-  if (input !== '') {
-
+  if (input !== '' && activeFilters.length > 0) {
     checkFiltersAndCards((filter, card) => {
       if (isStringMatch(card, input)
         && card.type === filter.label) {
         results.push(card)
       }
     })
+  }
 
-    if (activeFilters.length > 0) { return ({ results }) }
-
+  if (input !== '' && activeFilters.length === 0) {
     cards.forEach((card) => {
       if (isStringMatch(card, input)) {
         results.push(card)
       }
     })
+  }
 
-    return ({ results })
-  } else {
-
+  if (input === '') {
     checkFiltersAndCards((filter, card) => {
       if (card.type === filter.label) {
         results.push(card)
       }
     })
-
-    return ({ results })
   }
 
+  return ({ results })
 }
 
 export default connect(mapStateToProps)(ResultsContainer)
