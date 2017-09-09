@@ -32,43 +32,43 @@ const mapStateToProps = (state) => {
   let activeFilters = state.filters.options.filter((filter) => filter.isChecked)
   let cards = state.demos.map((demo) => demo.cards.map((card) => card)).reduce((acc, cur) => acc.concat(cur), [])
 
+  function isStringMatch(card, input) { return card.name.toLowerCase().indexOf(input) !== -1 }
+
+  function checkFiltersAndCards(cb) {
+    activeFilters.forEach((filter) => {
+      cards.forEach((card) => {
+        cb(filter, card)
+      })
+    })
+  }
+
   if (input !== '') {
 
-    activeFilters.forEach((filter) => {
-      cards.forEach((card) => {
-        if (card.name.toLowerCase().indexOf(input) !== -1
-          && card.type === filter.label) {
-          results.push(card)
-        }
-      })
+    checkFiltersAndCards((filter, card) => {
+      if (isStringMatch(card, input)
+        && card.type === filter.label) {
+        results.push(card)
+      }
     })
 
-    if (activeFilters.length > 0) {
-      return ({
-        results
-      })
-    } else {
-      cards.forEach((card) => {
-        if (card.name.toLowerCase().indexOf(input) !== -1) {
-          results.push(card)
-        }
-      })
-      return ({
-        results
-      })
-    }
+    if (activeFilters.length > 0) { return ({ results }) }
 
+    cards.forEach((card) => {
+      if (isStringMatch(card, input)) {
+        results.push(card)
+      }
+    })
+
+    return ({ results })
   } else {
-    activeFilters.forEach((filter) => {
-      cards.forEach((card) => {
-        if (card.type === filter.label) {
-          results.push(card)
-        }
-      })
+
+    checkFiltersAndCards((filter, card) => {
+      if (card.type === filter.label) {
+        results.push(card)
+      }
     })
-    return ({
-      results
-    })
+
+    return ({ results })
   }
 
 }
