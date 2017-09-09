@@ -28,55 +28,49 @@ class ResultsContainer extends Component {
 const mapStateToProps = (state) => {
   let results = []
 
-  if (state.filters.searchInput !== '') {
-    let numOfActiveFilters = 0
-    state.filters.options.forEach((option) => {
-      if (option.isChecked) {
-        numOfActiveFilters += 1
-        state.demos.forEach((demo) => {
-          demo.cards.forEach((card) => {
-            if (card.name.toLowerCase().indexOf(state.filters.searchInput.toLowerCase()) !== -1 && card.type === option.label) {
-              results.push(card)
-            }
-          })
-        })
-      }
+  let input = state.filters.searchInput.toLowerCase()
+  let activeFilters = state.filters.options.filter((filter) => filter.isChecked)
+  let cards = state.demos.map((demo) => demo.cards.map((card) => card)).reduce((acc, cur) => acc.concat(cur), [])
+
+  if (input !== '') {
+
+    activeFilters.forEach((filter) => {
+      cards.forEach((card) => {
+        if (card.name.toLowerCase().indexOf(input) !== -1
+          && card.type === filter.label) {
+          results.push(card)
+        }
+      })
     })
 
-    if (numOfActiveFilters > 0) {
+    if (activeFilters.length > 0) {
       return ({
-        results: results
+        results
       })
     } else {
-      state.demos.forEach((demo) => {
-        demo.cards.forEach((card) => {
-          if (card.name.toLowerCase().indexOf(state.filters.searchInput.toLowerCase()) !== -1) {
-            results.push(card)
-          }
-        })
+      cards.forEach((card) => {
+        if (card.name.toLowerCase().indexOf(input) !== -1) {
+          results.push(card)
+        }
       })
       return ({
-        results: results
+        results
       })
     }
+
   } else {
-    state.filters.options.forEach((option) => {
-      if (option.isChecked) {
-        state.demos.forEach((demo) => {
-          demo.cards.forEach((card) => {
-            if (card.type === option.label) {
-              results.push(card)
-            }
-          })
-        })
-      }
+    activeFilters.forEach((filter) => {
+      cards.forEach((card) => {
+        if (card.type === filter.label) {
+          results.push(card)
+        }
+      })
     })
-
     return ({
-      results: results
+      results
     })
-
   }
+
 }
 
 export default connect(mapStateToProps)(ResultsContainer)
