@@ -28,7 +28,7 @@ const store = createStore(reducer, {
         {
           id: 1,
           name: 'Skycab HR',
-          color: '#03363D',
+          color: '#30AABC',
           url: 'https://skycabhr.zendesk.com',
           description: 'An internal instance demonstrating standard HR queries on topics like benefits, PTO, and complaints.',
           type: 'HR',
