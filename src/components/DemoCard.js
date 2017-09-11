@@ -7,7 +7,7 @@ class DemoCard extends Component {
       <div className="DemoCard">
         <div className="DemoCardTop" style={{ backgroundColor: this.props.color }}>
           <h4 className="DemoCardName">{this.props.name}</h4>
-          <a href={this.props.url} className="DemoCardURL">{this.props.url}</a>
+          <a href={this.props.url} className="DemoCardURL">{this.props.url.replace('https://', '')}</a>
         </div>
         <div className="DemoCardBottom">
           <div className="DemoCardBottomLeft">

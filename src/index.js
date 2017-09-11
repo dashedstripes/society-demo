@@ -14,12 +14,7 @@ const store = createStore(reducer, {
     options: [
       {
         id: 1,
-        label: 'technology',
-        isChecked: false
-      },
-      {
-        id: 2,
-        label: 'retail',
+        label: 'HR',
         isChecked: false
       }
     ]
@@ -32,87 +27,13 @@ const store = createStore(reducer, {
       cards: [
         {
           id: 1,
-          name: 'Skycab',
+          name: 'Skycab HR',
           color: '#03363D',
-          url: 'skycab.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
-          login: '#',
-          docs: '#'
-        }
-      ]
-    },
-    {
-      id: 2,
-      region: 'AMER',
-      isOpen: false,
-      cards: [
-        {
-          id: 1,
-          name: 'Skycab US',
-          color: '#FF6D5A',
-          url: 'skycab-us.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
-          login: '#',
-          docs: '#'
-        },
-        {
-          id: 2,
-          name: 'Skycab US',
-          color: '#FF6D5A',
-          url: 'skycab-us.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'retail',
-          login: '#',
-          docs: '#'
-        },
-        {
-          id: 3,
-          name: 'Skycab US',
-          color: '#FF6D5A',
-          url: 'skycab-us.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
-          login: '#',
-          docs: '#'
-        },
-        {
-          id: 4,
-          name: 'Skycab US',
-          color: '#FF6D5A',
-          url: 'skycab-us.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'retail',
-          login: '#',
-          docs: '#'
-        },
-        {
-          id: 5,
-          name: 'Skycab US',
-          color: '#FF6D5A',
-          url: 'skycab-us.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
-          login: '#',
-          docs: '#'
-        }
-      ]
-    },
-    {
-      id: 3,
-      region: 'APAC',
-      isOpen: false,
-      cards: [
-        {
-          id: 1,
-          name: 'Skycab US',
-          color: '#F79A3E',
-          url: 'skycab-us.zendesk.com',
-          description: 'A technology instance, based on a ride sharing company.',
-          type: 'technology',
-          login: '#',
-          docs: '#'
+          url: 'https://skycabhr.zendesk.com',
+          description: 'An internal instance demonstrating standard HR queries on topics like benefits, PTO, and complaints.',
+          type: 'HR',
+          login: 'https://skycabhr.zendesk.com/agent',
+          docs: 'https://skycabhr.zendesk.com/hc/en-us/categories/200798885-Internal'
         }
       ]
     }
