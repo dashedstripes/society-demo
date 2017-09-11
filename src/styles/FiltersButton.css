@@ -4,8 +4,17 @@
   font-weight: bold;
   margin-bottom: 20px;
   text-align: left;
-  padding: 17px 15px;
+  padding: 14px 15px;
   outline: none;
   color: #ffffff;
   background: #EB4962;
+  box-shadow: 0 5px #D1213E;
+  border-radius: 3px;
+}
+
+.FiltersButton:active {
+  box-shadow: 0 0 #D1213E;
+  top: 6px;
+  padding: 17px 15px;
+  margin-bottom: 14px;
 }
