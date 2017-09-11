@@ -16,7 +16,7 @@ class App extends Component {
           <div className="container">
             <FormContainer />
             <DemosContainer />
-            <RegionsContainer />
+            {this.props.demos.length > 1 ? <RegionsContainer /> : null}
           </div>
         </div>
       )
