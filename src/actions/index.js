@@ -44,3 +44,9 @@ export const resetFilters = () => {
     type: 'RESET_FILTERS'
   }
 }
+
+export const closeModal = () => {
+  return {
+    type: 'CLOSE_MODAL'
+  }
+}
