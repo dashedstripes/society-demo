@@ -5,7 +5,8 @@ class LoginConfirm extends Component {
   render() {
     if (this.props.isOpen) {
       return (
-        <div className="LoginConfirmOverlay">
+        <div>
+          <div className="LoginConfirmOverlay"></div>
           <div className="LoginConfirm">
             LoginConfirm
           </div>
