@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import '../styles/LoginConfirm.css'
 
 class LoginConfirm extends Component {
@@ -18,4 +19,6 @@ class LoginConfirm extends Component {
   }
 }
 
-export default LoginConfirm
+const mapStateToProps = (state) => state.modal
+
+export default connect(mapStateToProps)(LoginConfirm)

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Header from './Header'
-import LoginConfirm from './LoginConfirm'
+import LoginConfirm from '../containers/LoginConfirm'
 import FormContainer from '../containers/FormContainer'
 import DemosContainer from '../containers/DemosContainer'
 import RegionsContainer from '../containers/RegionsContainer'
@@ -15,7 +15,7 @@ class App extends Component {
         <div className="app">
           <Header />
           <div className="container">
-            <LoginConfirm isOpen={this.props.modal.isOpen} />
+            <LoginConfirm />
             <FormContainer />
             <DemosContainer />
             {this.props.demos.length > 1 ? <RegionsContainer /> : null}
@@ -27,7 +27,7 @@ class App extends Component {
         <div className="app">
           <Header />
           <div className="container">
-            <LoginConfirm isOpen={this.props.modal.isOpen} />
+            <LoginConfirm />
             <FormContainer />
             <ResultsContainer />
           </div>
