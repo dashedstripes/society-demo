@@ -7,6 +7,9 @@ import App from './components/App'
 
 const store = createStore(reducer, {
   currentRegion: 'EMEA',
+  modal: {
+    isOpen: false
+  },
   filters: {
     isOpen: false,
     isActive: false,
