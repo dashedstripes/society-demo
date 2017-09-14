@@ -14,6 +14,11 @@ const store = createStore(reducer, {
     options: [
       {
         id: 1,
+        label: 'technology',
+        isChecked: false
+      },
+      {
+        id: 2,
         label: 'HR',
         isChecked: false
       }
@@ -27,6 +32,16 @@ const store = createStore(reducer, {
       cards: [
         {
           id: 1,
+          name: 'Skycab',
+          color: '#03363d',
+          url: 'https://skycab.zendesk.com',
+          description: 'A B2C technology instance based on a ride sharing company.',
+          type: 'technology',
+          login: 'https://skycab.zendesk.com/agent',
+          docs: 'https://help.skycab.me/hc/en-gb/articles/115005060005'
+        },
+        {
+          id: 2,
           name: 'Skycab HR',
           color: '#30AABC',
           url: 'https://skycabhr.zendesk.com',
