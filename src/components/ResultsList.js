@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DemoCard from './DemoCard'
+import DemoCard from '../containers/DemoCard'
 
 class ResultsList extends Component {
   render() {

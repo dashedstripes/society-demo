@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { toggleRegion } from '../actions'
 import RegionButton from './RegionButton'
-import DemoCard from './DemoCard'
+import DemoCard from '../containers/DemoCard'
 
 class RegionList extends Component {
 
