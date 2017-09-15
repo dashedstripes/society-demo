@@ -26,7 +26,7 @@ class LoginConfirm extends Component {
                 <a className="LoginConfirmButton" href={this.props.data.url} target="_blank">Accept</a>
               </div>
               <div className="col-md-6">
-                <a className="LoginConfirmButton" href="">Decline</a>
+                <a className="LoginConfirmButton" onClick={this.handleClick.bind(this)}>Decline</a>
               </div>
             </div>
           </div>
