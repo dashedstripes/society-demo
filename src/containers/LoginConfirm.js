@@ -5,7 +5,8 @@ import '../styles/LoginConfirm.css'
 
 class LoginConfirm extends Component {
 
-  handleClick() {
+  handleClick(e) {
+    e.preventDefault();
     this.props.dispatch(closeModal())
   }
 
@@ -15,7 +16,19 @@ class LoginConfirm extends Component {
         <div>
           <div className="LoginConfirmOverlay" onClick={this.handleClick.bind(this)}></div>
           <div className="LoginConfirm">
-            LoginConfirm
+            <div className="row">
+              <div className="col-md-12">
+                <p>Agreement for accessing {this.props.data.name}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                <a className="LoginConfirmButton" href={this.props.data.url} target="_blank">Accept</a>
+              </div>
+              <div className="col-md-6">
+                <a className="LoginConfirmButton" href="">Decline</a>
+              </div>
+            </div>
           </div>
         </div>
       )

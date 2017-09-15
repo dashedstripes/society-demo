@@ -50,3 +50,16 @@ export const closeModal = () => {
     type: 'CLOSE_MODAL'
   }
 }
+
+export const openModal = () => {
+  return {
+    type: 'OPEN_MODAL'
+  }
+}
+
+export const setModal = (payload) => {
+  return {
+    type: 'SET_MODAL',
+    payload
+  }
+}

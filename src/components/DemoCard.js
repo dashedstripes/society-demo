@@ -1,7 +1,19 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { setModal, openModal } from '../actions'
 import '../styles/DemoCard.css'
 
 class DemoCard extends Component {
+
+  handleLogin(e) {
+    e.preventDefault();
+    let card = {
+      name: this.props.name,
+      url: this.props.url
+    }
+    this.props.dispatch(setModal(card))
+    this.props.dispatch(openModal())
+  }
   render() {
     return (
       <div className="DemoCard">
@@ -15,7 +27,7 @@ class DemoCard extends Component {
             <p className="DemoCardType">{this.props.type.charAt(0).toUpperCase() + this.props.type.slice(1)}</p>
           </div>
           <div className="DemoCardBottomRight">
-            <a className="DemoCardLink" target="_blank" href={this.props.login}>login</a>
+            <a className="DemoCardLink" target="_blank" href={this.props.login} onClick={this.handleLogin.bind(this)}>login</a>
             <a className="DemoCardLink" target="_blank" href={this.props.docs}>docs</a>
           </div>
         </div>
@@ -24,4 +36,4 @@ class DemoCard extends Component {
   }
 }
 
-export default DemoCard
+export default connect()(DemoCard)
