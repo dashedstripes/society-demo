@@ -18,7 +18,7 @@ class LoginConfirm extends Component {
           <div className="LoginConfirm">
             <div className="row">
               <div className="col-md-12">
-                <p>Agreement for accessing {this.props.data.name}</p>
+                <p className="LoginConfirmText">By accepting these terms you agree that you have read and understood the documentation for {this.props.data.name}.</p>
               </div>
             </div>
             <div className="row">
