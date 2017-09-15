@@ -23,6 +23,10 @@
   color: #ffffff;
 }
 
+.DemoCardURL:hover {
+  color: #ffffff;
+}
+
 .DemoCardType {
   color: #AAAAAA; 
 }
