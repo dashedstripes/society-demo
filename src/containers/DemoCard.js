@@ -9,7 +9,7 @@ class DemoCard extends Component {
     e.preventDefault();
     let card = {
       name: this.props.name,
-      url: this.props.url
+      url: this.props.login
     }
     this.props.dispatch(setModal(card))
     this.props.dispatch(openModal())
