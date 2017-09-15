@@ -18,6 +18,20 @@ class LoginConfirm extends Component {
           <div className="LoginConfirm">
             <div className="row">
               <div className="col-md-12">
+
+                <p>You are about to access {this.props.data.name}, a demo environment shared by hundreds of Zendesk employees around the world.</p>
+                <p>By clicking "Accept", you acknowledge that you have completed all necessary training, and you pledge to:</p>
+
+                <ul>
+                  <li>Be respectful of the work and efforts put into this demo instance.</li>
+                  <li>Revert any changes that you've made that aren't part of the official scripts.</li>
+                  <li>Only submit tickets relevant to the use-case you are presenting (nothing like: "test123 blablabla").</li>
+                </ul>
+
+                <p>If you are unsure, please click on the "docs" button to review the documentation.</p>
+                <p>All actions are monitored, and you will be held accountable for violating those rules.</p>
+                <p>Repeat offenders may lose their access rights.</p>
+
                 <p className="LoginConfirmText">By accepting these terms you agree that you have read and understood the documentation for {this.props.data.name}.</p>
               </div>
             </div>

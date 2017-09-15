@@ -20,6 +20,18 @@
   background: #ffffff;
 }
 
+@media screen and (max-width: 1220px) {
+  .LoginConfirm {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .LoginConfirm {
+    width: 90%;
+  }
+}
+
 .LoginConfirmButton {
   width: 100%;
   display: block;
