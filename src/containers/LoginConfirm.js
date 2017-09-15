@@ -19,6 +19,9 @@ class LoginConfirm extends Component {
             <div className="row">
               <div className="col-md-12">
 
+                <h4>Terms and conditions</h4>
+                <hr />
+
                 <p>You are about to access {this.props.data.name}, a demo environment shared by hundreds of Zendesk employees around the world.</p>
                 <p>By clicking "Accept", you acknowledge that you have completed all necessary training, and you pledge to:</p>
 
