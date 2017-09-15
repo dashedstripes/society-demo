@@ -35,7 +35,7 @@ class LoginConfirm extends Component {
                 <p>All actions are monitored, and you will be held accountable for violating those rules.</p>
                 <p>Repeat offenders may lose their access rights.</p>
 
-                <p className="LoginConfirmText">By accepting these terms you agree that you have read and understood the documentation for {this.props.data.name}.</p>
+                <p className="LoginConfirmText">By accepting these terms you agree that you have read and understood the terms and conditions for {this.props.data.name}.</p>
               </div>
             </div>
             <div className="row">
