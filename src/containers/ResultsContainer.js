@@ -32,7 +32,10 @@ const mapStateToProps = (state) => {
   let activeFilters = state.filters.options.filter((filter) => filter.isChecked)
   let cards = state.demos.map((demo) => demo.cards.map((card) => card)).reduce((acc, cur) => acc.concat(cur), [])
 
-  function isStringMatch(card, input) { return card.name.toLowerCase().indexOf(input) !== -1 }
+  function isNameMatch(card, input) { return card.name.toLowerCase().indexOf(input) !== -1 }
+  function isTagMatch(tag, input) {
+    return tag.toLowerCase().indexOf(input) !== -1
+  }
 
   function checkFiltersAndCards(cb) {
     activeFilters.forEach((filter) => {
@@ -44,7 +47,7 @@ const mapStateToProps = (state) => {
 
   if (input !== '' && activeFilters.length > 0) {
     checkFiltersAndCards((filter, card) => {
-      if (isStringMatch(card, input)
+      if (isNameMatch(card, input)
         && card.type === filter.label) {
         results.push(card)
       }
@@ -53,9 +56,18 @@ const mapStateToProps = (state) => {
 
   if (input !== '' && activeFilters.length === 0) {
     cards.forEach((card) => {
-      if (isStringMatch(card, input)) {
+      if (isNameMatch(card, input)) {
         results.push(card)
       }
+
+      card.tags.forEach((tag) => {
+        if (isTagMatch(tag, input)) {
+          if (results.indexOf(card) === -1) {
+            results.push(card)
+          }
+        }
+      })
+
     })
   }
 

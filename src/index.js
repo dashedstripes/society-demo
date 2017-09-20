@@ -42,7 +42,8 @@ const store = createStore(reducer, {
           description: 'A B2C technology instance based on a ride sharing company.',
           type: 'technology',
           login: 'https://monitor.zende.sk/accounts/478062/agents',
-          docs: 'https://help.skycab.me/hc/en-gb/articles/115005060005'
+          docs: 'https://help.skycab.me/hc/en-gb/articles/115005060005',
+          tags: ['elephant', 'sandwich']
         },
         {
           id: 2,
@@ -52,7 +53,8 @@ const store = createStore(reducer, {
           description: 'An internal instance demonstrating standard HR queries on topics like benefits, PTO, and complaints.',
           type: 'HR',
           login: 'https://monitor.zende.sk/accounts/873384/agents',
-          docs: 'https://skycabhr.zendesk.com/hc/en-us/categories/200798885-Internal'
+          docs: 'https://skycabhr.zendesk.com/hc/en-us/categories/200798885-Internal',
+          tags: ['monkey', 'television']
         }
       ]
     }
