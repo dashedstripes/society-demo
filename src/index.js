@@ -30,6 +30,11 @@ const store = createStore(reducer, {
         id: 3,
         label: 'IT',
         isChecked: false
+      },
+      {
+        id: 4,
+        label: 'gaming',
+        isChecked: false
       }
     ]
   },
@@ -66,7 +71,7 @@ const store = createStore(reducer, {
           name: 'Skycab IT',
           color: '#ed725e',
           url: 'https://skycabit.zendesk.com',
-          description: 'Internal ITSM instance operated by Skycab\'s IT department',
+          description: 'Internal ITSM instance operated by Skycab\'s IT department.',
           type: 'IT',
           login: 'https://skycabit.zendesk.com/agent',
           docs: 'https://drive.google.com/drive/folders/0B0QfIO5ptBCdQ2NPQXlsM2VCVms?usp=sharing',
@@ -86,6 +91,17 @@ const store = createStore(reducer, {
             'myndbend process management light',
             'calendar',
             'ticket field manager']
+        },
+        {
+          id: 4,
+          name: 'Skygame',
+          color: '#fac157',
+          url: 'https://skycabit.zendesk.com',
+          description: 'External B2C use case for the gaming industry spanning examples of video games, betting, mobile apps, and more.',
+          type: 'gaming',
+          login: 'https://skygame.zendesk.com/agent',
+          docs: 'https://skygame.zendesk.com/hc/en-gb/categories/115000811889-Internal-Docs',
+          tags: []
         }
       ]
     }
