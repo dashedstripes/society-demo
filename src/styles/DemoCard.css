@@ -1,5 +1,5 @@
 .DemoCard {
-  height: 250px;
+  height: 265px;
   overflow: auto;
   margin-bottom: 20px;
   border-radius: 3px;
@@ -48,6 +48,10 @@
   float: left;
   width: 75%;
   padding-right: 10px;
+}
+
+.DemoCardDescription {
+  font-size: 15px;
 }
 
 .DemoCardBottomRight{
