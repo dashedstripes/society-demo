@@ -101,7 +101,7 @@ const store = createStore(reducer, {
           id: 4,
           name: 'Skygame',
           color: '#fac157',
-          url: 'https://skycabit.zendesk.com',
+          url: 'https://skygame.zendesk.com',
           description: 'External B2C use case for the gaming industry spanning examples of video games, betting, mobile apps, and more.',
           type: 'gaming',
           login: 'https://skygame.zendesk.com/agent',
