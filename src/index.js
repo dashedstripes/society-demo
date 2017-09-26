@@ -35,6 +35,11 @@ const store = createStore(reducer, {
         id: 4,
         label: 'gaming',
         isChecked: false
+      },
+      {
+        id: 5,
+        label: 'retail',
+        isChecked: false
       }
     ]
   },
@@ -101,6 +106,17 @@ const store = createStore(reducer, {
           type: 'gaming',
           login: 'https://skygame.zendesk.com/agent',
           docs: 'https://skygame.zendesk.com/hc/en-gb/categories/115000811889-Internal-Docs',
+          tags: []
+        },
+        {
+          id: 5,
+          name: 'Madison Island',
+          color: '#7796A8',
+          url: 'https://madisonisland.zendesk.com',
+          description: 'A fully customized B2C fashion retail environment.',
+          type: 'retail',
+          login: 'https://madisonisland.zendesk.com/agent',
+          docs: 'https://docs.google.com/a/zendesk.com/document/d/17FwL7fPwL4d37i-asi1IZxDQC6r4egZ0EQAp9eMe-mk/edit?usp=sharing',
           tags: []
         }
       ]
