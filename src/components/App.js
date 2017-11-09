@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Header from './Header'
 import LoginConfirm from '../containers/LoginConfirm'
 import FormContainer from '../containers/FormContainer'
 import DemosContainer from '../containers/DemosContainer'
@@ -13,7 +12,6 @@ class App extends Component {
     if (!this.props.filters.isActive) {
       return (
         <div className="app">
-          <Header />
           <div className="container">
             <LoginConfirm />
             <FormContainer />
@@ -25,7 +23,6 @@ class App extends Component {
     } else {
       return (
         <div className="app">
-          <Header />
           <div className="container">
             <LoginConfirm />
             <FormContainer />
