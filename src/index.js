@@ -56,7 +56,7 @@ const store = createStore(reducer, {
           url: 'https://skycab.zendesk.com',
           description: 'A B2C technology instance based on a ride sharing company.',
           type: 'technology',
-          login: 'https://monitor.zende.sk/accounts/478062/agents',
+          login: 'https://skycab.zendesk.com/agent',
           docs: 'https://help.skycab.me/hc/en-gb/articles/115005060005',
           tags: []
         },
@@ -67,7 +67,7 @@ const store = createStore(reducer, {
           url: 'https://skycabhr.zendesk.com',
           description: 'An internal instance demonstrating standard HR queries on topics like benefits, PTO, and complaints.',
           type: 'HR',
-          login: 'https://monitor.zende.sk/accounts/873384/agents',
+          login: 'https://skycabhr.zendesk.com/agent',
           docs: 'https://skycabhr.zendesk.com/hc/en-us/categories/200798885-Internal',
           tags: []
         },

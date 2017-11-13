@@ -22,7 +22,7 @@ class SearchInput extends Component {
 
   render() {
     return (
-      <input type="text" className="SearchInput" placeholder="Search..." value={this.props.value} onChange={this.handleChange.bind(this)} />
+      <input type="text" className="SearchInput" placeholder="Search for an instance or app..." value={this.props.value} onChange={this.handleChange.bind(this)} />
     )
   }
 }
