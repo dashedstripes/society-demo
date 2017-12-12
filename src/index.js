@@ -40,6 +40,11 @@ const store = createStore(reducer, {
         id: 5,
         label: 'retail',
         isChecked: false
+      },
+      {
+        id: 6,
+        label: 'entertainment',
+        isChecked: false
       }
     ]
   },
@@ -118,6 +123,57 @@ const store = createStore(reducer, {
           login: 'https://madisonisland.zendesk.com/agent',
           docs: 'https://docs.google.com/a/zendesk.com/document/d/17FwL7fPwL4d37i-asi1IZxDQC6r4egZ0EQAp9eMe-mk/edit?usp=sharing',
           tags: []
+        }
+      ]
+    },
+    {
+      id: 2,
+      region: 'AMER',
+      isOpen: false,
+      cards: [
+        {
+          id: 1,
+          name: 'Entertainment 276 Human Resources',
+          color: '#03363d',
+          url: 'https://z3n-hrdemo.zendesk.com',
+          description: 'The Human Resources department for Entertainment 276.',
+          type: 'HR',
+          login: 'https://z3n-hrdemo.zendesk.com/agent',
+          docs: 'https://drive.google.com/drive/folders/16-6EOEVUoNjlleej-pq2jJwhlUT3IKLT?usp=sharing',
+          tags: ['Myndbend', 'Workday Demo', 'Knowledge Capture', 'Ticket Redaction', 'Ticket Sharing']
+        },
+        {
+          id: 2,
+          name: 'Entertainment 276 IT',
+          color: '#30AABC',
+          url: 'https://z3n-itdemo.zendesk.com',
+          description: 'The IT department for Entertainment 276.',
+          type: 'IT',
+          login: 'https://z3n-itdemo.zendesk.com/agent',
+          docs: 'https://drive.google.com/drive/folders/1559j_21o1g7lBZ5mcv_NOdgofw-l05pK?usp=sharing',
+          tags: ['SFDC', 'Jira', 'Asset Management', 'Knowledge Capture', 'Myndbend', 'Custom App']
+        },
+        {
+          id: 3,
+          name: 'Entertainment 276 Customer Support',
+          color: '#ed725e',
+          url: 'https://z3n-csdemo.zendesk.com',
+          description: 'Customer Support for an Entertainment Company.',
+          type: 'entertainment',
+          login: 'https://z3n-csdemo.zendesk.com/agent',
+          docs: 'https://drive.google.com/drive/folders/1ZFdY73h30a52vfavH_HQTEGr3eJmwUS9?usp=sharing',
+          tags: ['Purchase History', 'SFDC', 'Knowledge Capture', 'Pathfinder', 'Myndbend']
+        },
+        {
+          id: 4,
+          name: 'Entertainment 276 Retail',
+          color: '#fac157',
+          url: 'https://z3n-retaildemo.zendesk.com',
+          description: 'External B2C use case for the gaming industry spanning examples of video games, betting, mobile apps, and more.',
+          type: 'retail',
+          login: 'https://z3n-retaildemo.zendesk.com/agent',
+          docs: 'https://drive.google.com/drive/folders/1YubERiciT-SIN0k1M83rG3GXBuCuqnq-?usp=sharing',
+          tags: ['purchase history', 'conditional fields', 'time tracking', 'shopify']
         }
       ]
     }
