@@ -169,7 +169,7 @@ const store = createStore(reducer, {
           name: 'Entertainment 276 Retail',
           color: '#fac157',
           url: 'https://z3n-retaildemo.zendesk.com',
-          description: 'External B2C use case for the gaming industry spanning examples of video games, betting, mobile apps, and more.',
+          description: 'A multi brand company (B2C) with Clothing, Home Decor and Electronics.',
           type: 'retail',
           login: 'https://z3n-retaildemo.zendesk.com/agent',
           docs: 'https://drive.google.com/drive/folders/1YubERiciT-SIN0k1M83rG3GXBuCuqnq-?usp=sharing',
