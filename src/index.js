@@ -118,7 +118,7 @@ const store = createStore(reducer, {
           name: 'Madison Island',
           color: '#7796A8',
           url: 'https://madisonisland.zendesk.com',
-          description: 'A fully customized B2C fashion retail environment.',
+          description: 'A multi brand company (B2C & B2B) with Clothing, Home Decor, Electronics, FMCG and Wholesale',
           type: 'retail',
           login: 'https://madisonisland.zendesk.com/agent',
           docs: 'https://docs.google.com/a/zendesk.com/document/d/18T8-HdEXlIHFBR0MmAYo1qIyGL3nNJV9YYehVI_vRvU/edit?usp=sharing',
