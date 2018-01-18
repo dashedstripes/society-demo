@@ -121,7 +121,7 @@ const store = createStore(reducer, {
           description: 'A multi brand company (B2C & B2B) with Clothing, Home Decor, Electronics, FMCG and Wholesale',
           type: 'retail',
           login: 'https://madisonisland.zendesk.com/agent',
-          docs: 'https://docs.google.com/a/zendesk.com/document/d/18T8-HdEXlIHFBR0MmAYo1qIyGL3nNJV9YYehVI_vRvU/edit?usp=sharing',
+          docs: 'https://drive.google.com/drive/folders/12Bd-EBD3oaLTFe-z75FawrUMhgUq_uPb?usp=sharing',
           tags: []
         }
       ]
